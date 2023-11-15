@@ -50,18 +50,7 @@ class Number():
 		self.col = 0
 
 	def set_group(self,base):
-		# Groups works like such:
-		# 111 | 222 | 333
-		# 111 | 222 | 333
-		# 111 | 222 | 333
-		# ---------------
-		# 444 | 555 | 666
-		# 444 | 555 | 666
-		# 444 | 555 | 666
-		# ---------------
-		# 777 | 888 | 999
-		# 777 | 888 | 999
-		# 777 | 888 | 999
+
 		#taking advantage of ints truncating values - divide the column (minus one) by base and add 1, divide row (minus one) by base but add that as a multiple of the base (similar to doing non base 10 math!)
 		#Ex. Base 3, position [row 4, column 8] Group 6 - column-1 divided by base is 2.3, truncated to 2, plus 1 is 3. Row-1 divided by base is 1, times base is 3. 3+3 is 6, the proper group.
 		g = (int((self.col-1) / base + 1))+((int((self.row-1)/base))*base)

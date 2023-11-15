@@ -103,8 +103,12 @@ def click_handler(pos):
             input_number = input("Enter a number for this cell (1-9): ")
             try:
                 input_number = int(input_number)
-                if 1 <= input_number <= 9:
+                if 1 <= input_number <= 9 and input_number == solved_board[row][col]:
                     sudoku_board[row][col] = input_number
+                    print("Correct!")
+                else:
+                    print("Incorrect")
+
             except ValueError:
                 print("Invalid input. Please enter a number between 1 and 9.")
     elif x > 525 and x < 525+150 and y > 100 and y < 150:
