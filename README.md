@@ -1,31 +1,31 @@
-# 🎮 Interactive Sudoku Generator & Solver
+#  Interactive Sudoku Generator & Solver
 
 A fully-featured Sudoku game built with Python and Pygame, featuring an algorithmic puzzle generator, automated solver with visualization, and an intuitive user interface.
 
-## ✨ Features
+## Features
 
-### 🎲 Dynamic Puzzle Generation
+### Dynamic Puzzle Generation
 - **Algorithmic board creation** using backtracking constraint satisfaction
 - Generates valid 9×9 Sudoku puzzles with guaranteed unique solutions
 - Randomized difficulty through selective cell removal
 
-### 🤖 Automated Solver
+### Automated Solver
 - Visual step-by-step solving animation
 - Demonstrates the solution process in real-time with 0.1s delays
 - Random cell-filling order for varied visualization
 
-### 🎯 Interactive Gameplay
+### Interactive Gameplay
 - Click-to-input number entry system
 - Real-time validation against the solution
 - Immediate feedback on correct/incorrect answers
 - Clean, intuitive grid-based UI
 
-### 🔄 Regeneration System
+### Regeneration System
 - One-click puzzle regeneration
 - Maintains game state and UI consistency
 - Fresh puzzles on demand
 
-## 🛠️ Technical Implementation
+## Technical Implementation
 
 ### Architecture
 
@@ -43,20 +43,19 @@ A fully-featured Sudoku game built with Python and Pygame, featuring an algorith
 ### Key Algorithms
 
 **Board Generation**
-```python
-# Uses constraint satisfaction with backtracking
-# Validates against three constraints simultaneously:
-# - Row uniqueness
-# - Column uniqueness  
-# - 3×3 subgrid uniqueness
-```
+- Uses constraint satisfaction with backtracking
+- Validates against three constraints simultaneously:
+- Row uniqueness
+- Column uniqueness  
+- 3×3 subgrid uniqueness
+
 
 **Solver Visualization**
 - Randomized cell revelation order
 - Frame-by-frame rendering for smooth animation
 - Non-blocking UI updates
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 ```bash
@@ -82,7 +81,7 @@ pip install pygame
 python sudoku.py
 ```
 
-## 🎮 How to Play
+## How to Play
 
 1. **Start the game** - A new Sudoku puzzle generates automatically
 2. **Click any empty cell** (marked with 0) to input a number
@@ -91,7 +90,7 @@ python sudoku.py
 5. **Use the Regenerate button** - Get a fresh puzzle anytime
 6. **Click the Solver button** - Watch the algorithm solve the puzzle step-by-step
 
-## 🧩 Code Highlights
+## Code Highlights
 
 ### Smart Group Calculation
 The generator uses mathematical group assignment for 3×3 subgrids:
@@ -108,24 +107,24 @@ Each number placement checks three constraints in O(n) time:
 ### Randomized Difficulty
 Uses probability-based cell removal (66% chance) for varied puzzle difficulty.
 
-## 📈 Future Enhancements
+##  Future Enhancements
 
-- [ ] Multiple difficulty levels (Easy, Medium, Hard)
-- [ ] Hint system
-- [ ] Timer and scoring
-- [ ] Save/load game state
-- [ ] Undo/redo functionality
-- [ ] Mobile-responsive design
-- [ ] Multiplayer mode
+- Multiple difficulty levels (Easy, Medium, Hard)
+- Hint system
+- Timer and scoring
+- Save/load game state
+- Undo/redo functionality
+- Mobile-responsive design
+- Multiplayer mode
 
-## 🧪 Testing Considerations
+## Testing Considerations
 
 - Board generation validation (all puzzles must be solvable)
 - Constraint satisfaction verification
 - UI responsiveness testing
 - Edge case handling (impossible configurations)
 
-## 📝 Technical Skills Demonstrated
+## Technical Skills Demonstrated
 
 - **Algorithms**: Backtracking, constraint satisfaction, randomization
 - **OOP Design**: Class hierarchies, encapsulation, separation of concerns
